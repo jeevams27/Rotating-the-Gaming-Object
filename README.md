@@ -4,40 +4,70 @@
 To develop a 3D application for rotating the gaming objects in unity.
 ## Algorithm:
 ### Step1:
-Start
-### Start2:
-Click File -> Scene -> Select the scene -> Save as-> New folder(Scenes)-> File name (Expno1)
-### Start3:
-Click Hierarchy -> 3DObject -> Cylinder
-Hierarchy -> 3DObject -> Capsule
-Hierarchy -> 3DObject -> Text
-Hierarchy -> Effects -> Particle system
-### Start4:
+Start 
+### Step2:
+Click File -> Scene -> Select the scene -> Save as-> New folder(Scenes)-> File name (Exp1)
+### Step3:
+1.Click Hierarchy -> 3DObject -> Cube
+
+2.Hierarchy -> 3DObject -> Sphere
+
+3.Hierarchy -> 3DObject -> Text
+
+4.Hierarchy -> Effects -> Particle system
+### Step4:
 Create a folder in project and name as Materials
-Material folder -> Create -> Material (Name: Cylinder)
+Material folder -> Create -> Material (Name: Cube)
 Inspector ->Surface Inputs ->BaseMAp (Choose the color)
-Drag the Cylinder to the plane and release the mouse
+Drag the Cube to the plane and release the mouse
 
 Create a folder in project and name as Materials
-Material folder -> Create -> Material (Name: Capsule)
+Material folder -> Create -> Material (Name: Sphere)
 Inspector ->Surface Inputs ->BaseMAp (Choose the color)
-Drag the Capsule to the plane and release the mouse
+Drag the Sphere to the plane and release the mouse
 
-### Start5:
+### Step5:
 Click Hierarchy -> DirectionalLight
-Inspector -> Change the color to white (255,255,255)
+Inspector -> Change the color to red for Cube and blue for sphere.
 
-### Start6:
-Create a folder name Coding and create a C# file to add the coding in it.
+### Step6:
+Create a folder name exp1 and create a C# file to add the coding in it.
 
-### Start7:
-To add our C# Script file to our selected object, click on the C# Script file and drag it to our selected objects in the Hierarchy window nad run the application.
+### Step7:
+To add our C# Script file to our selected object, click on the C# Script file and drag it to our selected objects in the Hierarchy window and run the application.
 
-### Start8:
-Stop
+### Step8:
+Stop after the rotation.
 
 ## Program:
+```
+Developed by: Paul Andrew D
+Reg no: 212221230075
+```
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
+public class exp1 : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.RotateAround(Vector3.right, Vector3.up, 60 * Time.deltaTime);
+        
+    }
+}
+```
 ## Output:
+![](./o1.png)
 
+![](./o2.png)
 ## Result:
+Thus a 3D application for rotating the gaming objects in unity is developed successfully.
