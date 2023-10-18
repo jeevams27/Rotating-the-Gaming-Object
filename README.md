@@ -41,8 +41,8 @@ Stop after the rotation.
 
 ## Program:
 ```
-Developed by: Paul Andrew D
-Reg no: 212221230075
+Developed by: MS.JEEVA
+Reg no: 212221230040
 ```
 ```c#
 using System.Collections;
